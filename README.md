@@ -1,5 +1,5 @@
 # Zapatos
-React Project, Shop/Sell online for women's/men's designer shoes, boots, sandals, and sneakers.
+React Project, Shop/Sell online for women's/men's shoes, boots, sandals, and sneakers.
 
 # List of MVPs
 
@@ -10,8 +10,8 @@ React Project, Shop/Sell online for women's/men's designer shoes, boots, sandals
   
 ## Shoe Details
   * price
+  * Add to cart
   * sizes
-  * colors
   * Shoe info
   * rating
   * Comments 
@@ -28,7 +28,6 @@ React Project, Shop/Sell online for women's/men's designer shoes, boots, sandals
 * Name
 * Rating 
 * photo
-* Bio
 * List of posted shoes
 * Add shoes for sale
  
