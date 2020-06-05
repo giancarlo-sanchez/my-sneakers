@@ -16,6 +16,9 @@ React Project, Shop/Sell online for women's/men's shoes, boots, sandals, and sne
   * rating
   * Comments 
   * Likes
+  
+## Add new shoes
+ * form that adds new shoes for sale(needs to be logged in)
 
   
 ## Shopping Cart
