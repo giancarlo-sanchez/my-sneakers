@@ -6,7 +6,7 @@ React Project, Shop/Sell online for women's/men's designer shoes, boots, sandals
 ## Shoes Listing 
   * price
   * rating
-  * Likes 
+   
   
 ## Shoe Details
   * price
@@ -15,6 +15,7 @@ React Project, Shop/Sell online for women's/men's designer shoes, boots, sandals
   * Shoe info
   * rating
   * Comments 
+  * Likes
 
   
 ## Shopping Cart
