@@ -1,6 +1,6 @@
 const express = require("express");
 const morgan = require("morgan");
-const { environment , frontEndServer } = require('./config');
+const { environment } = require('./config');
 const cors = require("cors");
 
 const indexRouter = require('./routes/index');

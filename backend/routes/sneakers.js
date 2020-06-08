@@ -15,7 +15,7 @@ const { requireAuth } = require("../auth");
 
 router.get("/", asyncHandler(async(req, res)=>{
     const sneakers =  await db.Sneaker.findAll({
-        include: [db.Brand, db.SneakerType, db.User]
+        include: [db.Brand, db.SneakerType]
     });
     res.json({sneakers})
 }));
