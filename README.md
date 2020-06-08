@@ -1,47 +1,44 @@
-# Zapatos
-React Project, Shop/Sell online for women's/men's shoes, boots, sandals, and sneakers.
+# My-Sneakers
+React Project, online shop sneakers for men.
 
 # List of MVPs
 
-## Shoes Listing 
+## Sneakers Listing 
+  * Shows list of sneakers with
   * price
   * rating
    
   
-## Shoe Details
+## Sneakers Details Page
+  * Shoe name
+  * Brand
   * price
   * Add to cart
-  * sizes
-  * Shoe info
+  * type
   * rating
-  * Comments 
-  * Likes
-  
-## Add new shoes
- * form that adds new shoes for sale(needs to be logged in)
 
   
 ## Shopping Cart
-  * list of shoes 
+  * list of sneakers 
   * Quantity 
-  * shoes details 
   * Total amount to pay 
+  * Checkout button
 
 ## User Profile page
 * Name
 * Rating 
 * photo
-* List of posted shoes
-* Add shoes for sale
+* Transaction record
  
  
 ## search results page
 
-* Sort by menu
-* List of shoes with basic info and link to shoe details page
+* Sort by name, brand, price range.
+* Shows list of sneakers by search results.
  
 ## navbar
 * Navbar 
   * Navigate to home 
   * search bar
+  * cart checkout button.
 
