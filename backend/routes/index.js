@@ -5,7 +5,8 @@ const router = express.Router();
 
 
 router.get("/", (req, res) => {
-    res.json({ message : "testing index root 😀"});
+    console.log("This is home");
+    res.json({ message : `testing index root ${process.env.PORT}`});
 });
 
 

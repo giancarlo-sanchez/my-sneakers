@@ -206,6 +206,8 @@ module.exports = {
             imageLarge: "https://stockx.imgix.net/Converse-Pro-Leather-80s-Low-Black.png?fit=fill&bg=FFFFFF&w=700&h=500&auto=format,compress&trim=color&q=90&dpr=2&updated_at=1585682018",
             imageMedium: "https://stockx.imgix.net/Converse-Pro-Leather-80s-Low-Black.png?fit=fill&bg=FFFFFF&w=300&h=214&auto=format,compress&trim=color&q=90&dpr=2&updated_at=1585682018",
             imageSmall: "https://stockx.imgix.net/Converse-Pro-Leather-80s-Low-Black.png?fit=fill&bg=FFFFFF&w=140&h=100&auto=format,compress&trim=color&q=90&dpr=2&updated_at=1585682018",
+            createdAt: new Date(),
+            updatedAt: new Date(),
           },
 
 
