@@ -5,9 +5,9 @@ React Project, online shop sneakers for men.
 
 ## Sneakers Listing 
   * Shows list of sneakers with
-  * price
-  * rating
-   
+  * price and
+  * brand
+ 
   
 ## Sneakers Details Page
   * Shoe name
@@ -15,7 +15,11 @@ React Project, online shop sneakers for men.
   * price
   * Add to cart
   * type
-  * rating
+ 
+## Brand Details Page
+  * Brand name
+  * Brand description
+  * List of sneakers for that specific brand.
 
   
 ## Shopping Cart
@@ -32,8 +36,6 @@ React Project, online shop sneakers for men.
  
  
 ## search results page
-
-* Sort by name, brand, price range.
 * Shows list of sneakers by search results.
  
 ## navbar
