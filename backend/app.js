@@ -11,10 +11,10 @@ const orderRouter = require('./routes/orders');
 const likedSneakers = require('./routes/likedSneakers');
 const bodyParser = require("body-parser");
 
-//const origin = process.env.SERVER_FRONT_END;
+const origin = "http://localhost:3000";
 
 const app = express();
-//app.use(cors({ origin }));
+app.use(cors({ origin }));
 
 //app.use(morgan("dev"));
 app.use(express.json());
