@@ -31,19 +31,9 @@ router.get("/", asyncHandler(async(req, res)=>{
 
 router.get("/:id(\\d+)", asyncHandler(async(req, res)=>{
     const sneakerId = parseInt(req.params.id,10);
-    const sneaker = await db.Sneaker.findByPk(sneakerId, {include: [db.Brand, db.sneakerType]});
-    const orders = await db.Order.findAll({
-        where: {
-            sneakerId: sneakerId
-        },
-        include: [db.User, {
-            model: db.Sneaker,
-            include: db.Brand
-        }]
-    });
+    const sneaker = await db.Sneaker.findByPk(sneakerId);
     res.json({
         sneaker,
-        orders
     });
 }));
 
