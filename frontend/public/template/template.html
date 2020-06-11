@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="template.css" rel="stylesheet" />
+        <title>My Sneakers</title>
+    </head>
+    <body>
+        <div class="grid-container">
+            <header class="header">
+                <div class="brand">
+                    <button onclick="openMenu()">&#9776</button>
+                    <a href="template.html">My Sneakers</a>
+                </div>
+                <div class="header-links">
+                    <a href="sigin.html">Sign In</a>
+                    <a href="cart.html">Cart</a>
+                </div>
+            </header>
+            <aside class="sidebar">
+                <h3>Shopping categories</h3>
+                <button class="sidebar-close-button"onclick="closeMenu()">close</button>
+                <ul>
+                    <li>
+                       <a href="index.html">Category 1</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Category 2</a>
+                     </li>
+                </ul>
+            </aside>
+
+            <main class="main">
+                <div class="content">
+                    <ul class="list-sneaker">
+                        <li>
+                            <div class="sneaker">
+                                <img class="sneaker-image" src="images/p1.jpg" alt="sneaker"/>
+                                <a class="sneaker-name" href="sneaker.html">Sneaker #1</a>
+                                <div class="sneaker-brand">brand #1</div>
+                                <div class="sneaker-price">$ 100</div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="sneaker">
+                                <img class="sneaker-image" src="images/p1.jpg" alt="sneaker"/>
+                                <a class="sneaker-name" href="sneaker.html">Sneaker #1</a>
+                                <div class="sneaker-brand">brand #1</div>
+                                <div class="sneaker-price">$ 100</div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="sneaker">
+                                <img class="sneaker-image" src="images/p1.jpg" alt="sneaker"/>
+                                <a class="sneaker-name" href="sneaker.html">Sneaker #1</a>
+                                <div class="sneaker-brand">brand #1</div>
+                                <div class="sneaker-price">$ 100</div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="sneaker">
+                                <img class="sneaker-image" src="images/p1.jpg" alt="sneaker"/>
+                                <a class="sneaker-name" href="sneaker.html">Sneaker #1</a>
+                                <div class="sneaker-brand">brand #1</div>
+                                <div class="sneaker-price">$ 100</div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="sneaker">
+                                <img class="sneaker-image" src="images/p1.jpg" alt="sneaker"/>
+                                <a class="sneaker-name" href="sneaker.html">Sneaker #1</a>
+                                <div class="sneaker-brand">brand #1</div>
+                                <div class="sneaker-price">$ 100</div>
+
+                            </div>
+                        </li>
+                        <!-- <li>Sneaker 2</li>
+                        <li>Sneaker 3</li>
+                        <li>Sneaker 4</li>
+                        <li>Sneaker 5</li> -->
+                    </ul>
+                    <!-- <ul class="list-brand">
+                        <li>
+                            <div class="brand">
+                                <img class="brand-image" src="images/b1.jpg" alt="brand"/>
+                                <a href="brand.html" class="brand-name">Brand #1</a>
+
+                            </div>
+
+                        </li>
+                         <li>Brand 2</li>
+                        <li>Brand 3</li>
+                        <li>Brand 4</li>
+                    </ul> -->
+                </div>
+
+            </main>
+            <footer class="footer">This is my react Template footer</footer>
+        </div>
+        <script>
+            function openMenu(){
+                document.querySelector(".sidebar").classList.add("open");
+            }
+            function closeMenu(){
+                document.querySelector(".sidebar").classList.remove("open");
+            }
+        </script>
+    </body>
+</html>

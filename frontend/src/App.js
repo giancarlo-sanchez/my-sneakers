@@ -1,48 +1,58 @@
 import React from 'react';
 import {Component} from 'react'
-import Products from './components/Products'
+import './index.css';
 
-class App extends Component {
-  constructor(props){
-    super(props);
-    this.state = { sneakers: []}
+import { BrowserRouter, Route, Link } from 'react-router-dom';
+import HomePage from './components/HomePage';
+import DetailPage from './components/DetailPage';
+import CartPage from './components/CartPage';
+
+function App(){
+
+  const openMenu =()=>{
+    document.querySelector(".sidebar").classList.add("open");
   }
-
-  async componentDidMount(){
-    try{
-      const sneaker = await fetch("http://localhost:8000/sneakers/");
-      // .then(res => res.json())
-      // .then(data => this.setState({
-      //   sneakers: data,
-      if(!sneaker.ok){
-        throw sneaker;
-      }
-      console.log("THis is the response",sneaker)
-
-      const sneakerData = await sneaker.json();
-      this.setState({sneakers: sneakerData.sneakers})
-    }catch(err){
-      console.error(err);
-    }
+  const closeMenu =()=>{
+    document.querySelector(".sidebar").classList.remove("open");
   }
+  return(
+    <BrowserRouter>
+    <div className="grid-container">
+            <header className="header">
+                <div className="brand">
+                    <button className="button-menu" onClick={openMenu}>&#9776;</button>
+                    <Link to="/">My Sneakers</Link>
+                </div>
+                <div className="header-links">
+                    <a href="sigin.html">Sign In</a>
+                    <a href="cart.html">Cart</a>
+                </div>
+            </header>
+            <aside className="sidebar">
+                <h3>Shopping categories</h3>
+                <button className="sidebar-close-button"onClick={closeMenu}>close</button>
+                <ul>
+                    <li>
+                       <a href="index.html">Category 1</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Category 2</a>
+                     </li>
+                </ul>
+            </aside>
 
+            <main className="main">
+              <div className="content">
+                <Route path="/sneakers/:id" exact={true} component={DetailPage}/>
+                <Route path="/cart/:id?" exact={true} component={CartPage}/>
+                <Route path="/" exact={true} component={HomePage}/>
+              </div>
 
-  render(){
-    return (
-      <div className="container">
-        <h1>E-commerce shopping web</h1>
-        <hr />
-        <div className="row">
-
-            <Products sneakers={this.state.sneakers} />
-
-
-        </div>
+          </main>
+            <footer className="footer">This is my react Template footer</footer>
       </div>
-    );
-
-  }
-
+    </BrowserRouter>
+  )
 }
 
 export default App;

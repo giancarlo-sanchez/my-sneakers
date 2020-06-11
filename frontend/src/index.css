@@ -1,0 +1,234 @@
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+
+body{
+    font: 1.6rem Helvetica;
+    height: 100vh;
+    margin: 0;
+
+}
+
+#root{
+    height: 100%;
+}
+
+
+.grid-container{
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-columns: 0.5fr 1.5fr;
+    grid-template-rows: 5rem 1fr 5rem;
+    height: 100%;
+    width: 100%;
+}
+
+.header{
+    grid-area: 1/1/2/4;
+    background-color: darkolivegreen;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.brand a{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.brand a:hover{
+    color:yellow;
+    text-decoration: none;
+}
+
+.header-links a{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.header-links a:hover{
+    color:yellow;
+    text-decoration: none;
+}
+
+.main{
+    grid-area: 2/1/3/4;
+    background-color:white;
+    color: purple;
+    padding: 0.5rem;
+}
+
+
+.footer{
+    grid-area: 3/1/4/4;
+    background-color: darkolivegreen;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: red
+}
+/* Main Screen */
+
+.sneaker{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.list-sneaker{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.list-sneaker li{
+    list-style-type: none;
+    padding: 0;
+    flex: 0 1 34rem;
+    margin: 1 rem;
+    height: 50rem;
+    border-bottom: .1rem gray solid;
+}
+
+.sneaker-image{
+    max-width: 34rem;
+    max-height: 34rem;
+
+}
+
+.sneaker-name{
+    font-size: 2rem;
+    /* font-weight: ; */
+}
+
+.sneaker-brand{
+    font-size: 1.2rem;
+    color: gray;
+}
+
+.sneaker-price{
+    font-size: 2rem;
+    color: gray;
+    font-weight: bold;
+}
+
+/*Side bar section*/
+
+.brand button{
+    font-size: 3rem;
+    padding: .5rem;
+    background: none;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+
+}
+
+.sidebar{
+    position: fixed;
+    transition: all .5s;
+    transform: translateX(-32rem);
+    width: 32rem;
+    background-color: lightblue;
+    height: 100%;
+}
+
+.sidebar.open{
+    transform: translateX(0);
+
+}
+
+.sidebar-close-button{
+    border-radius: 30%;
+    border: 0.1rem black solid;
+    color: black;
+    width: 6rem;
+    height: 3rem;
+    padding: 0.5rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+    position: absolute;
+    right: 0.5rem;
+    top: 1.5rem;
+}
+
+/*Sneaker details*/
+
+.details{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.details-image{
+    flex: 2 1 60rem;
+}
+
+.details-image img{
+    max-width: 60rem;
+    max-height: 100%;
+}
+
+.details-info{
+    flex: 1 1 60rem;
+}
+
+.details-action{
+    flex: 1 1 30rem;
+}
+
+.details-info ul, .details-action ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.details-info li, .details-action li{
+    margin-bottom:  1rem;
+}
+
+.back-to-home{
+    padding: 1rem;
+}
+
+.details-action{
+    border: .1rem gray solid;
+    border-radius: .5rem;
+    background-color: lightgrey;
+    padding: 1rem;
+}
+
+.details-action ul li:last-child{
+    display: flex;
+    flex-direction: column;
+}
+
+.details-action button{
+    padding: 1rem;
+    border: .1rem;
+    border-radius: .5rem;
+}
+
+.details-action button:hover{
+    background-color: orange;
+}
