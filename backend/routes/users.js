@@ -67,7 +67,7 @@ router.post(
     console.log("USER POSTED");
     const token = getUserToken(user);
 
-    res.status(201).json({ user: { id: user.id }, token });
+    res.status(201).json({ user: { id: user.id, firstName: user.firstName }, token });
   }
     const err = new Error("SignUp failed");
     err.status = 401;
@@ -98,7 +98,7 @@ router.post(
         return next(err);
       }
       const token = getUserToken(user);
-      res.json({ token, user: { id: user.id } });
+      res.json({ token, user: { id: user.id, firstName: user.firstName } });
     } catch (e) {
       const err = new Error("Login failed");
       err.status = 401;
