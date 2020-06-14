@@ -47,6 +47,12 @@ body{
     text-decoration: none;
 }
 
+.header-links{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 .header-links a{
     font-size: 1.5rem;
     font-weight: bold;
@@ -146,10 +152,15 @@ a:hover{
 .sidebar{
     position: fixed;
     transition: all .5s;
-    transform: translateX(-32rem);
-    width: 32rem;
-    background-color: lightblue;
+    transform: translateX(-30rem);
+
+    width: 30rem;
+    background-color: darkolivegreen;
     height: 100%;
+}
+
+.sidebar h3{
+    text-align: center;
 }
 
 .sidebar.open{

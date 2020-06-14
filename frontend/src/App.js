@@ -2,7 +2,7 @@ import React from 'react';
 import {Component} from 'react'
 import './index.css';
 
-import { BrowserRouter, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Route, Link, Redirect } from 'react-router-dom';
 import HomePage from './components/HomePage';
 import DetailPage from './components/DetailPage';
 import CartPage from './components/CartPage';
@@ -14,6 +14,7 @@ import { useSelector } from 'react-redux';
 import PlaceOrderPage from './components/PlaceOrderPage';
 import ConfirmationPage from './components/ConfirmationPage';
 import OrdersPage from './components/OrdersPage'
+import BrandDetailPage from './components/BrandDetailPage'
 
 function App(){
 
@@ -24,6 +25,11 @@ function App(){
   const openMenu =()=>{
     document.querySelector(".sidebar").classList.add("open");
   }
+
+  const handleCartButton =()=>{
+
+  }
+
   const closeMenu =()=>{
     document.querySelector(".sidebar").classList.remove("open");
   }
@@ -36,8 +42,11 @@ function App(){
                     <Link to="/">My Sneakers</Link>
                 </div>
                 <div className="header-links">
-                    <a href="cart.html">Cart   </a>
-                    {userInfo ? <Link to="/profile">Welcome {userInfo.user.firstName}</Link>: <Link to="/signin">Sign In</Link>}
+                <Link to={`/cart`}>
+                  <button>Cart</button>
+                </Link>
+
+                    {userInfo ? <Link to="/">Welcome {userInfo.user.firstName}</Link>: <Link to="/signin">Sign In</Link>}
 
 
                 </div>
@@ -65,6 +74,7 @@ function App(){
                 <Route path="/placeorder" component={PlaceOrderPage} />
                 <Route path="/confirmation" component={ConfirmationPage} />
                 <Route path="/sneakers/:id" exact={true} component={DetailPage}/>
+                <Route path="/brands/:id" exact={true} component={BrandDetailPage}/>
                 <Route path="/cart/:id?" exact={true} component={CartPage}/>
                 <Route path="/" exact={true} component={HomePage}/>
               </div>

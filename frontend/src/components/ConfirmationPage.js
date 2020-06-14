@@ -4,10 +4,12 @@ import {useDispatch, useSelector} from 'react-redux'
 import {Link} from 'react-router-dom'
 import { removeFromCart } from '../actions/addToCart'
 import Cookie from 'js-cookie';
+import refreshPage from '../auxFunctions/refreshPage'
 
 
 function ConfirmationPage(props){
     Cookie.remove('cartItems')
+    //refreshPage();
     const  userSignin = useSelector(state => state. userSignin);
     const {userInfo, loading, error} = userSignin;
     console.log("this is my user info:",userInfo)
@@ -31,41 +33,15 @@ function ConfirmationPage(props){
               </Link>
 
             </li>
-            {/* {
-              cartItems.length === 0 ?
-                <div>
-                  Cart is empty
-          </div>
-                :
-                cartItems.map(item =>
-                  <li key={item.sneakerId}>
-                    <div className="cart-image">
-                      <img src={item.image} alt="product" />
-                    </div>
-                    <div className="cart-name">
-                      <div>
 
-                          {item.name}
-
-
-                      </div>
-                      <div>
-                        Size: {item.size}
-                      </div>
-                    </div>
-                    <div className="cart-price">
-                      ${item.price}
-                    </div>
-                  </li>
-                )
-            } */}
           </ul>
         </div>
 
 
       </div>
-        <button className="button primary"><Link to="/">Continue Shopping</Link></button>
-
+      <Link to="/">
+        <button className="button primary">Continue Shopping</button>
+        </Link>
 
     </div>
 

@@ -10,6 +10,7 @@ function DetailPage (props){
     const sneakerDetails = useSelector(state => state.sneakerDetails);
     console.log("this is sneakerDetails",sneakerDetails)
     const {sneaker, loading, error} = sneakerDetails
+    console.log("This is sneakerDetails ",sneakerDetails)
     const dispatch = useDispatch();
 
     let index =  props.match.params.id
