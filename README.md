@@ -5,6 +5,7 @@ React-Redux Project, shop rare sneakers online for men.
 
 ## App Tour
 The very first screen you will see is the home page
+![alt text](https://github.com/giancarlo-sanchez/my-sneakers/blob/master/read1.jpg)
 
 
 
