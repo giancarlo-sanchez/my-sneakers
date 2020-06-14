@@ -11,15 +11,9 @@ module.exports = (sequelize, DataTypes) => {
   }, {});
    Sneaker.associate = function(models) {
     // associations can be defined here
-    Sneaker.hasMany(models.Order, {foreignKey: "sneakerId"});
+    // Sneaker.hasMany(models.Order, {foreignKey: "sneakerId"});
     Sneaker.belongsTo(models.Brand, {foreignKey: "brandId"});
     Sneaker.belongsTo(models.SneakerType, {foreignKey: "sneakerTypeId"});
-    const UsersColumnMapping = {
-      through: "Order",
-      otherKey: 'userId',
-      foreignKey: 'sneakerId'
-    }
-    Sneaker.belongsToMany(models.User, UsersColumnMapping);
   };
   return Sneaker;
 };

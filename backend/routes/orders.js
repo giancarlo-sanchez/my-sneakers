@@ -9,13 +9,13 @@ const {
 } = require('./utils')
 const { requireAuth } = require("../auth");
 
-router.use(requireAuth);
+//router.use(requireAuth);
 
 
 
 router.get("/", asyncHandler(async (req, res) => {
     const orders = await db.Order.findAll({
-        include: [db.User, db.Sneaker]
+        include: [db.User]
     });
     res.json({
         orders
@@ -23,30 +23,35 @@ router.get("/", asyncHandler(async (req, res) => {
 }));
 
 router.post("/", asyncHandler(async (req, res)=>{
-    const userId = parseInt(req.body.userId, 10)
-    const sneakerId = parseInt(req.body.sneakerId, 10)
-    const newOrder = { userId, sneakerId};
+     console.log("this is the request",req.body)
+    // const userId = req.body
+    // console.log("this is userId",userId, "and this is the request body",userId);
+    const  userId = parseInt(req.body.userId, 10)
+    const arrayIds = req.body.arrayIds;
+    const shippingDetails = req.body.shippingDetails;
+    const paymentDetails = req.body.paymentDetails;
+    const itemsPrice= parseFloat(req.body.itemsPrice, 10)
+    const shippingPrice= parseFloat(req.body.shippingPrice, 10)
+    const taxPrice= parseFloat(req.body.taxPrice, 10)
+    const totalPrice= parseFloat(req.body.totalPrice, 10)
+
+    const newOrder = { userId, arrayIds, shippingDetails, paymentDetails, itemsPrice, shippingPrice, taxPrice,  totalPrice};
     try{
-        const success = await db.Order.create(newOrder);
+        const created = await db.Order.create(newOrder);
+        res.status(201).json({created});
     }catch(err){
         console.error(err);
         throw err;
     }
-    res.status(201).end();
 }));
+
 
 
 router.get("/:id(\\d+)", asyncHandler(async(req, res)=>{
     const orderId = parseInt(req.params.id,10);
     let order = await db.Order.findAll({
       where: { id: orderId },
-      include: [
-        db.User,
-        {
-          model: db.Sneaker,
-          include: db.Brand,
-        },
-      ],
+      include: [db.User],
     });
     order = order[0];
     order= order.toJSON();
