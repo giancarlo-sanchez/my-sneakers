@@ -13,9 +13,13 @@ const { requireAuth } = require("../auth");
 
 
 
-router.get("/", asyncHandler(async (req, res) => {
+router.get("/users/:id(\\d+)", asyncHandler(async (req, res) => {
+    console.log("this is the request",req.body)
+    const userId = parseInt(req.params.id,10);
+    //console.log("this is the request", req)
     const orders = await db.Order.findAll({
-        include: [db.User]
+        where: { userId: userId },
+        //  include: [db.User]
     });
     res.json({
         orders
