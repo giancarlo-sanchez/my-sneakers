@@ -8,6 +8,12 @@ import Cookie from 'js-cookie';
 
 function ConfirmationPage(props){
     Cookie.remove('cartItems')
+    const  userSignin = useSelector(state => state. userSignin);
+    const {userInfo, loading, error} = userSignin;
+    console.log("this is my user info:",userInfo)
+    const userId = userInfo.user.id
+
+
     return <div className="confirmation">
         <div className="back-to-home"><Link to="/">Back to Home page</Link></div>
         <div className="placeorder-info">
@@ -20,7 +26,7 @@ function ConfirmationPage(props){
         <div>
           <ul className="cart-list-container">
             <li>
-              <Link to="/records">
+             <Link to={`/orders/users/${userId}`}>
               See your shopping records
               </Link>
 

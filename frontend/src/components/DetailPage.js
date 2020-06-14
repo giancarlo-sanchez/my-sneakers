@@ -13,6 +13,7 @@ function DetailPage (props){
     const dispatch = useDispatch();
 
     let index =  props.match.params.id
+    console.log("This is sneaker detail id ",index)
 
     useEffect(()=>{
         dispatch(detailsSneaker(index))

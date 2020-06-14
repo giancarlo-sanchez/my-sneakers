@@ -17,17 +17,17 @@ const createOrder = (order) => async (dispatch, getState) => {
 }
 
 
-const listMyOrders = () => async (dispatch, getState) => {
+const listMyOrders = (userId) => async (dispatch, getState) => {
   try {
     dispatch({ type: MY_ORDER_LIST_REQUEST });
     const { userSignin: { userInfo } } = getState();
-    const { data } = await Axios.get("/api/orders/mine", {
+    const { data } = await Axios.get(`/orders/users/${userId}`, {
       headers:
-        { Authorization: 'Bearer ' + userInfo.token }
+        { Authorization: 'Bearer ' + userInfo.token },
     });
-    dispatch({ type: MY_ORDER_LIST_SUCCESS, payload: data })
+    dispatch({ type: MY_ORDER_LIST_SUCCESS, payload: data.orders })
   } catch (error) {
-    dispatch({ type: MY_ORDER_LIST_FAIL, payload: error.message });
+    //dispatch({ type: MY_ORDER_LIST_FAIL, payload: error.message });
   }
 }
 

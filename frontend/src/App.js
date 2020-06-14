@@ -13,7 +13,7 @@ import PaymentPage from './components/PaymentPage';
 import { useSelector } from 'react-redux';
 import PlaceOrderPage from './components/PlaceOrderPage';
 import ConfirmationPage from './components/ConfirmationPage';
-import OrderRecords from './components/OrderRecords';
+import OrdersPage from './components/OrdersPage'
 
 function App(){
 
@@ -61,8 +61,8 @@ function App(){
                 <Route path="/register" exact={true} component={SignUpPanel}/>
                 <Route path="/shipping" component={ShippingPage} />
                 <Route path="/payment" component={PaymentPage} />
+                <Route path="/orders/users/:id" component={OrdersPage} />
                 <Route path="/placeorder" component={PlaceOrderPage} />
-                <Route path="/records" component={OrderRecords} />
                 <Route path="/confirmation" component={ConfirmationPage} />
                 <Route path="/sneakers/:id" exact={true} component={DetailPage}/>
                 <Route path="/cart/:id?" exact={true} component={CartPage}/>
