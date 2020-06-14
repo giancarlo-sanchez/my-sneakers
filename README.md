@@ -1,6 +1,4 @@
 # My-Sneakers: Online Shopping App
-##### version 1.0 
-
 By [Giancarlo Sanchez](https://github.com/giancarlo-sanchez)
 
 React-Redux Project, shop rare sneakers online for men.
@@ -14,7 +12,7 @@ The very first screen you will see is the home page where you can
 * React: Components, Props, Events, Hooks, Router, Axios
 * Redux: Store, Reducers, Actions
 * HTML5 and CSS3: Semantic Elements, CSS Grid, Flexbox
-* Node & Express: Web API, Body Parser, File Upload, JWT
+* Node & Express: Body Parser, JWT Token for authorization
 
 
 ## List of MVPs
@@ -51,12 +49,18 @@ The very first screen you will see is the home page where you can
 * Transaction record
  
  
-## search results page
-* Shows list of sneakers by search results.
- 
+
 ## navbar
 * Navbar 
   * Navigate to home 
   * search bar
   * cart checkout button.
 
+## **Features to be implemented** 
+### navbar 
+  * search bar
+### search results page
+* Shows list of sneakers by search results.
+  
+
+##### current version: 1.0 
