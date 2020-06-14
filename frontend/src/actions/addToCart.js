@@ -1,4 +1,4 @@
-import { ADD_TO_CART_SUCCESS, REMOVE_FROM_CART} from "../constants/sneakerConstants";
+import { ADD_TO_CART_SUCCESS, REMOVE_FROM_CART, CART_SAVE_SHIPPING, CART_SAVE_PAYMENT } from "../constants/sneakerConstants";
 import axios from "axios";
 import Cookie from 'js-cookie';
 
@@ -31,6 +31,11 @@ const removeFromCart = (sneakerId) => (dispatch, getState) =>{
      Cookie.set("cartItems", JSON.stringify(cartItems));
 }
 
-export {removeFromCart }
+const saveShipping = (data) => (dispatch) => {
+    dispatch({ type: CART_SAVE_SHIPPING, payload: data });
+  }
+const savePayment = (data) => (dispatch) => {
+    dispatch({ type: CART_SAVE_PAYMENT, payload: data });
+  }
 
-export {addCart}
+export { addCart, removeFromCart, saveShipping, savePayment }

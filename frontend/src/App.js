@@ -8,7 +8,12 @@ import DetailPage from './components/DetailPage';
 import CartPage from './components/CartPage';
 import LoginPanel from './components/LoginPanel';
 import SignUpPanel from './components/SignUpPanel';
+import ShippingPage from './components/ShippingPage';
+import PaymentPage from './components/PaymentPage';
 import { useSelector } from 'react-redux';
+import PlaceOrderPage from './components/PlaceOrderPage';
+import ConfirmationPage from './components/ConfirmationPage';
+import OrderRecords from './components/OrderRecords';
 
 function App(){
 
@@ -38,7 +43,7 @@ function App(){
                 </div>
             </header>
             <aside className="sidebar">
-                <h3>Shopping categories</h3>
+                <h3>Our Brands</h3>
                 <button className="sidebar-close-button"onClick={closeMenu}>close</button>
                 <ul>
                     <li>
@@ -54,6 +59,11 @@ function App(){
               <div className="content">
                 <Route path="/signin" exact={true} component={LoginPanel}/>
                 <Route path="/register" exact={true} component={SignUpPanel}/>
+                <Route path="/shipping" component={ShippingPage} />
+                <Route path="/payment" component={PaymentPage} />
+                <Route path="/placeorder" component={PlaceOrderPage} />
+                <Route path="/records" component={OrderRecords} />
+                <Route path="/confirmation" component={ConfirmationPage} />
                 <Route path="/sneakers/:id" exact={true} component={DetailPage}/>
                 <Route path="/cart/:id?" exact={true} component={CartPage}/>
                 <Route path="/" exact={true} component={HomePage}/>
