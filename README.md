@@ -4,7 +4,7 @@ By [Giancarlo Sanchez](https://github.com/giancarlo-sanchez)
 React-Redux Project, shop rare sneakers online for men.
 
 ## App Tour
-The very first screen you will see is the home page where you can
+The very first screen you will see is the home page
 
 
 
@@ -28,39 +28,36 @@ The very first screen you will see is the home page where you can
   * Brand
   * price
   * Add to cart
-  * type
+  * select size
  
 ## Brand Details Page
   * Brand name
-  * Brand description
   * List of sneakers for that specific brand.
 
   
 ## Shopping Cart
   * list of sneakers 
-  * Quantity 
+  * sizes 
   * Total amount to pay 
   * Checkout button
 
-## User Profile page
-* Name
-* Rating 
-* photo
-* Transaction record
- 
- 
 
 ## navbar
 * Navbar 
   * Navigate to home 
-  * search bar
-  * cart checkout button.
+  * cart button.
 
-## **Features to be implemented** 
+
+## Features to be implemented: 
 ### navbar 
   * search bar
 ### search results page
 * Shows list of sneakers by search results.
+### User Profile page
+* Name
+* Rating 
+* photo
+* Transaction record
   
 
 ##### current version: 1.0 
