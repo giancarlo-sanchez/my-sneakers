@@ -56,11 +56,32 @@ function App(){
                 <button className="sidebar-close-button"onClick={closeMenu}>close</button>
                 <ul>
                     <li>
-                       <a href="index.html">Category 1</a>
+                       <Link to="/brands/1">Adidas</Link>
                     </li>
                     <li>
-                        <a href="index.html">Category 2</a>
-                     </li>
+                       <Link to="/brands/2">Converse</Link>
+                    </li>
+                    <li>
+                       <Link to="/brands/3">New Balance</Link>
+                    </li>
+                    <li>
+                       <Link to="/brands/4">Nike</Link>
+                    </li>
+                    <li>
+                       <Link to="/brands/5">Reebok</Link>
+                    </li>
+                    <li>
+                       <Link to="/brands/6">Puma</Link>
+                    </li>
+                    <li>
+                       <Link to="/brands/7">Jordan</Link>
+                    </li>
+                    <li>
+                       <Link to="/brands/8">Vans</Link>
+                    </li>
+                    <li>
+                       <Link to="/brands/9">ASICS</Link>
+                    </li>
                 </ul>
             </aside>
 

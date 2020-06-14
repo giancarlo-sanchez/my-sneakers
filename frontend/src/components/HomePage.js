@@ -25,7 +25,7 @@ return loading? <div>Loading...</div>:error? <div>{error}</div>:<ul className="l
             <div className="sneaker-name">
                 <Link to={"/sneakers/" + sneaker.id}>{sneaker.name}</Link>
             </div>
-            <a className="sneaker-brand" href={sneaker.Brand.website}>{sneaker.Brand.name}</a>
+            <Link className="sneaker-brand" to={"/brands/"+sneaker.id}>{sneaker.Brand.name}</Link>
             <div className="sneaker-price">$ {sneaker.price}</div>
 
         </div>

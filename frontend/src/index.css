@@ -65,6 +65,11 @@ body{
     text-decoration: none;
 }
 
+.header-links button{
+    background-color: orange;
+    padding: 0.5rem
+}
+
 .main{
     grid-area: 2/1/3/4;
     background-color:white;
@@ -108,11 +113,13 @@ a:hover{
 
 .list-sneaker li{
     list-style-type: none;
-    padding: 0;
+    padding: 1rem;
     flex: 0 1 34rem;
-    margin: 1 rem;
-    height: 50rem;
+    margin: 2 rem;
+    height: 40rem;
     border-bottom: .1rem gray solid;
+    border-right: .1rem gray solid;
+    border-left: .1rem gray solid;
 }
 
 .sneaker-image{
@@ -157,6 +164,13 @@ a:hover{
     width: 30rem;
     background-color: darkolivegreen;
     height: 100%;
+}
+
+.sidebar li{
+    height: 5rem;
+    /* border-top: 0.2rem white solid; */
+    font-size: 2.5rem;
+    text-align: center;
 }
 
 .sidebar h3{
@@ -442,4 +456,20 @@ div.greatings-message{
     text-align: center;
     background-color: olive;
     color: white;
+}
+
+/*brandDetails*/
+
+div.brand-list-name{
+    border: 0.1rem black solid;
+    background-color: darkolivegreen;
+    color:white;
+    position: relative;
+    left: 40%;
+    top: 1.2rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    max-width: 30rem;
+    font-size: 5rem;
 }
