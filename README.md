@@ -5,7 +5,7 @@ React-Redux full stack Project, shop rare sneakers online for men.
 
 
 ## Backend
-
+![alt text](https://github.com/giancarlo-sanchez/images-demo/blob/master/dbrelations.jpg)
 
 
 ## App Tour
