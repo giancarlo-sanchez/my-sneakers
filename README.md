@@ -9,14 +9,17 @@ React-Redux Project, shop rare sneakers online for men.
 
 
 
+
 In the Home page you will find the navigation bar and all the sneakers listed.
 In the left-upper side, there is hamburger menu icon that will render the list of sneaker's brands
 ![alt text](https://github.com/giancarlo-sanchez/images-demo/blob/master/read2.jpg)
 
 
 
+
 Clicking any of this links will take you to the brandsDetailPage where you will find all the sneakers for the selected brand.
 ![alt text](https://github.com/giancarlo-sanchez/images-demo/blob/master/read5.jpg)
+
 
 
 
@@ -26,13 +29,16 @@ This process will take you to detailSneakerPage where you can select your size a
 
 
 
+
 You can either go back to continue shopping or proceed to your cart and do checkout.
 ![alt text](https://github.com/giancarlo-sanchez/images-demo/blob/master/read4.jpg)
 
 
 
+
 If you are not logged-in
 ![alt text](https://github.com/giancarlo-sanchez/images-demo/blob/master/read3.jpg)
+
 
 
 
@@ -42,23 +48,53 @@ Then you need to provide Shipping information and payment method
 
 
 
+
 Last step is to place the order and you are ready to go!
 ![alt text](https://github.com/giancarlo-sanchez/images-demo/blob/master/read9.jpg)
 
-## In this project I used:
-* React: Components, Props, Events, Hooks, Router, Axios(to make fetch requests)
+
+
+
+After sending the order, there is a confirmation page that renders a greeting message and you have two options: Go back to HomePage and continue shopping or access all your shopping records.
+![alt text](https://github.com/giancarlo-sanchez/images-demo/blob/master/read10.jpg)
+
+
+
+
+The shopping records page list all your orders.
+![alt text](https://github.com/giancarlo-sanchez/images-demo/blob/master/read11.jpg)
+
+
+
+
+## For this project, I used:
+* React: Components, Props, Events, Hooks, Router. 
 * Redux: Store, Reducers, Actions
-* HTML5 and CSS3: Semantic Elements, CSS Grid, Flexbox
+* HTML5 and CSS: Semantic Elements, CSS Grid, Flexbox.
 * Node & Express: Body Parser, JWT for authorization.
+* npm js-cookie
+* Axios(to make fetch requests)
 
 
 ## List of MVPs
+
+## navbar 
+  * Navigate to home 
+  * go to cart button.
 
 ## Sneakers Listing 
   * Shows list of sneakers with
   * price and
   * brand
+  
+## SideBar Menu
+ * Lists All Brands
  
+ 
+## Brand Details Page
+  * Brand name
+  * List of sneakers for that specific brand. 
+  
   
 ## Sneakers Details Page
   * Shoe name
@@ -67,10 +103,6 @@ Last step is to place the order and you are ready to go!
   * Add to cart
   * select size
  
-## Brand Details Page
-  * Brand name
-  * List of sneakers for that specific brand.
-
   
 ## Shopping Cart
   * list of sneakers 
@@ -78,11 +110,14 @@ Last step is to place the order and you are ready to go!
   * Total amount to pay 
   * Checkout button
 
+## User Session
+ * Login/Register
+ 
+## Fake Checkout
+ * Shipping/Payment information
+ * Create a new order
 
-## navbar
-* Navbar 
-  * Navigate to home 
-  * cart button.
+
 
 
 ## Features to be implemented: 
@@ -92,7 +127,7 @@ Last step is to place the order and you are ready to go!
 * Shows list of sneakers by search results.
 ### User Profile page
 * Name
-* Rating 
+* Ratings and Likes 
 * photo
 * Transaction record
   
