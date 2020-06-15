@@ -1,7 +1,12 @@
 # My-Sneakers: Online Shopping App
 By [Giancarlo Sanchez](https://github.com/giancarlo-sanchez)
 
-React-Redux Project, shop rare sneakers online for men.
+React-Redux full stack Project, shop rare sneakers online for men.
+
+
+## Backend
+
+
 
 ## App Tour
  When using the app you will start at the HomePage
