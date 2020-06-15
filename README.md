@@ -73,7 +73,7 @@ The shopping records page list all your orders.
 * HTML5 and CSS: Semantic Elements, CSS Grid, Flexbox.
 * Node & Express: Body Parser, JWT for authorization.
 * npm js-cookie
-* Axios(to make fetch requests)
+* Axios(to make HTTP requests)
 
 
 ## List of MVPs
