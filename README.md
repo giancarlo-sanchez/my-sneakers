@@ -4,16 +4,52 @@ By [Giancarlo Sanchez](https://github.com/giancarlo-sanchez)
 React-Redux Project, shop rare sneakers online for men.
 
 ## App Tour
-The very first screen you will see is the home page
-![alt text](https://github.com/giancarlo-sanchez/my-sneakers/blob/master/read1.jpg)
+ When using the app you will start at the HomePage
+![alt text](https://github.com/giancarlo-sanchez/images-demo/blob/master/read1.jpg)
 
 
+
+In the Home page you will find the navigation bar and all the sneakers listed.
+In the left-upper side, there is hamburger menu icon that will render the list of sneaker's brands
+![alt text](https://github.com/giancarlo-sanchez/images-demo/blob/master/read2.jpg)
+
+
+
+Clicking any of this links will take you to the brandsDetailPage where you will find all the sneakers for the selected brand.
+![alt text](https://github.com/giancarlo-sanchez/images-demo/blob/master/read5.jpg)
+
+
+
+The next step will be to choose one item.
+This process will take you to detailSneakerPage where you can select your size and add it To the Cart.
+![alt text](https://github.com/giancarlo-sanchez/images-demo/blob/master/read12.jpg)
+
+
+
+You can either go back to continue shopping or proceed to your cart and do checkout.
+![alt text](https://github.com/giancarlo-sanchez/images-demo/blob/master/read4.jpg)
+
+
+
+If you are not logged-in
+![alt text](https://github.com/giancarlo-sanchez/images-demo/blob/master/read3.jpg)
+
+
+
+Then you need to provide Shipping information and payment method
+![alt text](https://github.com/giancarlo-sanchez/images-demo/blob/master/read6.jpg)
+![alt text](https://github.com/giancarlo-sanchez/images-demo/blob/master/read8.jpg)
+
+
+
+Last step is to place the order and you are ready to go!
+![alt text](https://github.com/giancarlo-sanchez/images-demo/blob/master/read9.jpg)
 
 ## In this project I used:
-* React: Components, Props, Events, Hooks, Router, Axios
+* React: Components, Props, Events, Hooks, Router, Axios(to make fetch requests)
 * Redux: Store, Reducers, Actions
 * HTML5 and CSS3: Semantic Elements, CSS Grid, Flexbox
-* Node & Express: Body Parser, JWT Token for authorization
+* Node & Express: Body Parser, JWT for authorization.
 
 
 ## List of MVPs
