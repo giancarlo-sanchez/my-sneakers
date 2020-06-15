@@ -71,7 +71,6 @@ The shopping records page list all your orders.
 
 
 
-
 ## For this project, I used:
 * React: Components, Props, Events, Hooks, Router. 
 * Redux: Store, Reducers, Actions
